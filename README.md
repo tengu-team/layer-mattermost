@@ -75,7 +75,7 @@ juju deploy cs:~tengu-team/mattermost
 juju deploy postgresql
 juju deploy haproxy
 # Connect Mattermost to Postgres
-juju add-relation postgresql:db mattermost:db
+juju add-relation mattermost postgresql:db
 # Connect Mattermost to the reverse proxy.
 juju add-relation haproxy mattermost
 # Add ssl config to haproxy
